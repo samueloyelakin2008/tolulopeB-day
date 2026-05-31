@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday T💖lulope</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Password Lock Screen -->
+    <div id="lock-screen" class="lock-screen">
+      <div class="lock-particles"></div>
+      <div class="lock-content">
+        <div class="lock-hearts">
+          <span>&#10084;</span><span>&#10084;</span><span>&#10084;</span>
+        </div>
+        <h1 class="lock-title">A little Present</h1>
+        <p class="lock-subtitle">for T💖lulope</p>
+        <div class="password-container">
+          <input type="password" id="password-input" placeholder="Enter the magic word..." autocomplete="off">
+          <button id="unlock-btn">
+            <span>Unlock</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/>
+            </svg>
+          </button>
+        </div>
+        <p id="error-message" class="error-message">Oops! That's not quite right...</p>
+      </div>
+      <div class="lock-glow"></div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+
+      <!-- Music Control -->
+      <div id="music-control" class="music-control">
+        <button id="music-toggle" class="music-btn">
+          <svg class="music-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+          </svg>
+          <span class="music-bars">
+            <span></span><span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Particles Container -->
+      <div id="particles-container" class="particles-container"></div>
+
+      <!-- Cursor Trail -->
+      <div id="cursor-trail"></div>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-particles"></div>
+        <div class="floating-hearts">
+          <span>&#10084;</span><span>&#10084;</span><span>&#10084;</span>
+          <span>&#10084;</span><span>&#10084;</span><span>&#10084;</span>
+          <span>&#10084;</span><span>&#10084;</span><span>&#10084;</span>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Happy Birthday</span>
+            <span class="title-name"> F💖lami Wura💖la T💖lulope</span>
+          </h1>
+          <p class="hero-subtitle typing-text">
+            "Some moments in life become timeless because of the people we share them with."
+          </p>
+          <div class="countdown-container">
+            <div class="countdown-label">Counting down to June 3rd</div>
+            <div id="countdown" class="countdown">
+              <div class="countdown-item">
+                <span class="countdown-value" id="days">00</span>
+                <span class="countdown-unit">Days</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-value" id="hours">00</span>
+                <span class="countdown-unit">Hours</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-value" id="minutes">00</span>
+                <span class="countdown-unit">Minutes</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-value" id="seconds">00</span>
+                <span class="countdown-unit">Seconds</span>
+              </div>
+            </div>
+          </div>
+          <a href="#letter" class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+          </a>
+        </div>
+        <div class="hero-gradient"></div>
+      </section>
+
+      <!-- Letter Section -->
+      <section id="letter" class="letter-section">
+        <div class="section-particles"></div>
+        <div class="letter-card glass-card">
+          <div class="letter-header">
+            <div class="letter-icon">&#9998;</div>
+            <h2>A Letter For You</h2>
+            <div class="letter-decoration"></div>
+          </div>
+          <div class="letter-content">
+            <p class="letter-greeting">Happy Birthday T💖lulope,</p>
+            <div class="letter-body">
+              <p class="letter-paragraph" data-delay="0">Time is one of the most precious things in life.</p>
+              <p class="letter-paragraph" data-delay="1">It moves quietly, never stopping for anyone, yet somehow, through all its movement, it gave one of the best gifts which is you.</p>
+              <p class="letter-paragraph" data-delay="3">Every second, every moment, and every memory we have shared throughout this university journey has been truly special to me. From the happy moments to the stressful days, from laughter to little arguments, from frustration to encouraging each other during studies every part of it became a memory I will always carry with you. You know me inside out, and I know you just the same, and honestly, to the extent that whenever you needed help you know who to call and you trusted me even till now and I am glad I stood by you in those times that is rare and beautiful.</p>
+              <p class="letter-paragraph" data-delay="4">You have been more than just a friend to me.</p>
+              <p class="letter-paragraph" data-delay="5">You are my study partner, my sister,my bae, my favorite person to gist with, and honestly one of the most genuine souls I have ever met. Your kindness, your playful nature, your stubborn and cranky moments😂😂😍, your smile, your energy everything about you makes you one of a kind.</p>
+              <p class="letter-paragraph" data-delay="6">This clock is not just an alarm clock.</p>
+              <p class="letter-paragraph" data-delay="7">I hope whenever you look at it, it reminds you that time is powerful, gentle, and meaningful… just like the bond we share. No matter how fast time moves, some people leave footprints in our lives that time can never erase, and you are one of those people for me.</p>
+              <p class="letter-paragraph" data-delay="8">Thank you for being part of my life and for making so many moments beautiful without even trying.</p>
+              <p class="letter-paragraph" data-delay="9">I appreciate you more than words can ever explain.</p>
+              <p class="letter-paragraph" data-delay="10">May this new year of your life bring you peace, happiness, success, endless laughter, and beautiful memories worth every second.</p>
+              <p class="letter-paragraph" data-delay="11">Happy Birthday once again, T💖lulope.</p>
+              <p class="letter-closing">May the lord be with you IJN.</p>
+              <p class="letter-closing">Glad to meet one as special as you</p>
+
+            </div>
+            <div class="letter-signature">
+              <span class="heart-signature">&#10084;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Memory Timeline Section -->
+      <section id="timeline" class="timeline-section">
+        <div class="section-particles"></div>
+        <h2 class="section-title">Our Memory Lane</h2>
+        <p class="section-subtitle">Moments that made us who we are</p>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-item" data-side="left">
+            <div class="timeline-icon">&#128172;</div>
+            <div class="timeline-content glass-card">
+              <h3>The First Conversations</h3>
+              <p>Where every beautiful story begins...</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-side="right">
+            <div class="timeline-icon">&#128218;</div>
+            <div class="timeline-content glass-card">
+              <h3>Study moments</h3>
+              <p>Reading at the office, shared notes, and growing together</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-side="left">
+            <div class="timeline-icon">&#128514;</div>
+            <div class="timeline-content glass-card">
+              <h3>Funny Arguments</h3>
+              <p>The kind that make us laugh later</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-side="right">
+            <div class="timeline-icon">&#128170;</div>
+            <div class="timeline-content glass-card">
+              <h3>Moments of Encouragement</h3>
+              <p>When you lifted me up and believed in me</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-side="left">
+            <div class="timeline-icon">&#127775;</div>
+            <div class="timeline-content glass-card">
+              <h3>The Unforgettable Memories</h3>
+              <p>Every moment worth all</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
+        <div class="section-particles"></div>
+        <h2 class="section-title">Our Precious Moments</h2>
+        <p class="section-subtitle">Captured memories of our journey together</p>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">A beautiful moment</span>
+            </div>
+          </div>
+          <div class="gallery-item large" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Together forever</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-type="video">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#127916;</span>
+              <span>Add Video</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Precious memory</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Our friendship</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Fun times</span>
+            </div>
+          </div>
+          <div class="gallery-item tall" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">My favorite person</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-type="video">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#127916;</span>
+              <span>Add Video</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Special moments</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-type="image">
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">&#128247;</span>
+              <span>Add Photo</span>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Memories</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reasons Section -->
+      <section id="reasons" class="reasons-section">
+        <div class="section-particles"></div>
+        <h2 class="section-title">Why You're Special</h2>
+        <p class="section-subtitle">Just a few of the endless reasons</p>
+        <div class="reasons-carousel">
+          <div class="reasons-track">
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#128145;</div>
+              <h3>Your Genuine Heart</h3>
+              <p>One of the most genuine souls I've ever met.Like your say you can give out your organ if possible🤣🤣</p>
+            </div>
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#128522;</div>
+              <h3>Your Beautiful Smile</h3>
+              <p>Lights up every room you enter</p>
+            </div>
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#128170;</div>
+              <h3>Your Strength</h3>
+              <p>You inspire me every single day</p>
+            </div>
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#128149;</div>
+              <h3>Your Kindness</h3>
+              <p>Always caring, always giving</p>
+            </div>
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#128514;</div>
+              <h3>Your Playful Nature</h3>
+              <p>Making every moment fun</p>
+            </div>
+            <div class="reason-card glass-card">
+              <div class="reason-icon">&#127775;</div>
+              <h3>Your Uniqueness</h3>
+              <p>One of a kind in every way</p>
+            </div>
+          </div>
+        </div>
+        <button id="heart-burst-btn" class="heart-burst-btn">
+          <span>Click for Love</span>
+          <span class="burst-heart">&#10084;</span>
+        </button>
+      </section>
+
+      <!-- Final Section -->
+      <section id="final" class="final-section">
+        <div class="section-particles"></div>
+        <div class="final-content">
+          <div class="final-hearts">
+            <span>&#10084;</span><span>&#10084;</span><span>&#10084;</span>
+          </div>
+          <h2 class="final-title">Some bonds are timeless...</h2>
+          <p class="final-message">and ours will always remain special.</p>
+          <div class="final-signature">
+            <p>Thank you for existing, T💖lulope</p>
+            <span class="final-heart">&#10084;</span>
+          </div>
+          <div class="final-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox hidden">
+      <button class="lightbox-close">&times;</button>
+      <div class="lightbox-content">
+        <div class="lightbox-placeholder">
+          <span class="placeholder-icon">&#128247;</span>
+          <span>Add your media</span>
+        </div>
+      </div>
+      <button class="lightbox-nav lightbox-prev">&#8249;</button>
+      <button class="lightbox-nav lightbox-next">&#8250;</button>
+    </div>
+<audio id="bgMusic" preload="auto" loop>
+  <source src="/bday.mp3" type="audio/mpeg">
+</audio>
+    <!-- Floating Love Notes -->
+    <div id="love-notes" class="love-notes"></div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
