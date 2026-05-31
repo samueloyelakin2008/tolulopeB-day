@@ -76,6 +76,8 @@ const CONFIG = {
     { type: 'image', src: '/img12.jpg', caption: ''},
 
     { type: 'image', src: '/img30.jpg' , caption: '' },
+
+    {type:'video', src: '/vid19.mp4', caption: 'First Time announcing her birthday at MFMCF😊😁' },
     
     { type: 'image', src: '/img27.jpg' , caption: '' },
     
