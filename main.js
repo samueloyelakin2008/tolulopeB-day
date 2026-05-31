@@ -87,6 +87,8 @@ const CONFIG = {
 
     { type: 'image', src: '/img26.jpg' , caption: 'Her sister💕', size:'large'},
 
+    {type: 'image', src: '/img28.jpg' , caption: ''},
+
     
   ]
 };
