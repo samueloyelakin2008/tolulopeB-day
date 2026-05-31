@@ -128,7 +128,7 @@ body {
 }
 
 #password-input {
-  width: 280px;
+  width: 330px;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   border: 2px solid var(--glass-border);
